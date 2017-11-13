@@ -1,6 +1,6 @@
-# Boilerplate Meteor Project
+# Activis Secret Santa Project
 
-Boilerplate Node, Meteor & React.js
+Secret Santa built on Node, Meteor & React.js
 
 ## Author
 

@@ -5,6 +5,13 @@ $white: white;
 $lightgrey : #f9f9f9;
 $darkgrey: #777777;
 
+$green: #e4ede0;
+$blue: #dfe7ed;
+$red: #eddfdf;
+$green-alt: darken($green, 15%);
+$blue-alt: darken($blue, 15%);
+$red-alt: darken($red, 15%);
+
 // Spacing
 $space: 1.4rem;
 

@@ -1,17 +1,41 @@
-.item {
-    background: $item-bg;
-    border: 1px solid $item-border;
-    margin-bottom: $space;
-    padding: $space;
-}
+$green: #e4ede0;
+$blue: #dfe7ed;
+$red: #eddfdf;
+$green-alt: darken($green, 15%);
+$blue-alt: darken($blue, 15%);
+$red-alt: darken($red, 15%);
 
-.item__message {
-    color: $item-text-color;
+.item{
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 1.3rem;
+    padding: 1.3rem;
 }
-
-.item__status-message {
-    color: $item-text-color;
+.item__message{
+    font-size: 1.3rem;
     font-style: italic;
+    font-weight: 300;
     text-align: center;
-    margin: 0;
 }
+
+.item--position-1{
+    background: $green;
+    border-color: $green-alt;
+}
+
+.item--position-2{
+    background: $blue;
+    border-color: $blue-alt;
+}
+
+.item--position-3{
+    background: $red;
+    border-color: $red-alt;
+}
+
+
+
+//BEM - Block, Element, Modifier
+//.some-item__some-message
+//.some-item__some-message--last-item
+//.some-item--last-item

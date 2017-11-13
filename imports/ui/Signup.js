@@ -43,8 +43,8 @@ export default class Signup extends React.Component {
             <p>We are currently in open signups.</p>
             
             <form onSubmit={this.onSubmit.bind(this)} noValidate className="boxed-view__form">
-                <input type="email" ref="email" name="email" placeholder="Email" noValidate/>
-                <input type="password" ref="password" name="password" placeholder="Password"/>
+                <input className="genericForms" type="email" ref="email" name="email" placeholder="Email" noValidate/>
+                <input className="genericForms" type="password" ref="password" name="password" placeholder="Password"/>
                 <button className="button">Create Account</button>
             </form>
             <Link to="/">Already have an account ?</Link>
