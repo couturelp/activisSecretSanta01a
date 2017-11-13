@@ -19,7 +19,7 @@ Meteor.methods({
             var message = {
                 "html": "<p>Hi <b>" + targetPerson.name + "</b>,<br> the owner of your group; " + groupOwner.name + " send you this Secret Santa email.<br> Your target is : <b><i> " + packagePerson.name + "</b> (" + packagePerson.email + ")<i> <br> Better start looking for a gift!</p><br> <p>*|SIGNATURE|*</p>",
                 "subject": "Your secret santa pick from " + groupOwner.name + ".",
-                "from_email": "secretsanta@gmaq.ca",
+                "from_email": "secretsanta@quantik.ca",
                 "from_name": "Secret Santa",
                 "to": [{
                         "email": targetPerson.email,
