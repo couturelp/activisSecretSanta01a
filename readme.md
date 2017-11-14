@@ -30,11 +30,15 @@ Go in Heroku Dashboard, enter APP, then RESSOURCES, configure Addons, find more.
 using 
 heroku addons:create mongolab:sandbox
 
-heroku config shows you the env variables. you should now have MONGODB_URI.
+heroku config 
+to shows you the env variables. you should now have MONGODB_URI.
 
 then set the root uri (proj url, no trailing slash)
 
 heroku config:set ROOT_URL="https://activislink-v01a.herokuapp.com"
+or
+heroku config:set ROOT_URL="https://activis-santa-01a.herokuapp.com"
+heroku config:set ROOT_URL="http://activis-santa-01a.gmaq.ca"
 
 then push to Heroku
 
