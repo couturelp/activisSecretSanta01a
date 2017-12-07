@@ -17,8 +17,8 @@ if (Meteor.isServer){
 Meteor.methods({
     'sentemails.sendEmail': function(groupOwner, targetPerson, packagePerson){
             var message = {
-                "html": "<p>Hi <b>" + targetPerson.name + "</b>,<br> the owner of your group; " + groupOwner.name + " send you this Secret Santa email.<br> Your target is : <b><i> " + packagePerson.name + "</b> (" + packagePerson.email + ")<i> <br> Better start looking for a gift!</p><br> <p>*|SIGNATURE|*</p>",
-                "subject": "Your secret santa pick from " + groupOwner.name + ".",
+                "html": "<p>Salut <b>" + targetPerson.name + "</b>,<br> concernant le super souper de Noël chez " + groupOwner.name + " voici donc la fameuse personne à qui tu dois trouver un cadeau incroyable pour < 25 $.<br> Tu dois acheter un cadeau pour : <b><i> " + packagePerson.name + "</b> (" + packagePerson.email + ")<i> <br> Bonne chance !</p><br> <p>*|SIGNATURE|*</p>",
+                "subject": "Cible pour échange de cadeaux chez " + groupOwner.name + ".",
                 "from_email": "secretsanta@quantik.ca",
                 "from_name": "Secret Santa",
                 "to": [{
@@ -36,7 +36,7 @@ Meteor.methods({
                 "merge_language": "mailchimp",
                 "global_merge_vars": [{
                         "name": "signature",
-                        "content": "Merry christmas! This was only a TEST."
+                        "content": "Joyeux Noël de la part du bot Quantik."
                     }]
             };
         
